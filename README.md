@@ -32,6 +32,12 @@
 $ npm install
 ```
 
+## Run Prisma ORM
+
+```bash
+$ npx prisma generate
+```
+
 ## Running the app
 
 ```bash
@@ -43,6 +49,12 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+## Oprn API
+
+```
+http://localhost:3000
 ```
 
 ## Test
