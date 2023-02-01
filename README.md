@@ -51,10 +51,10 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Oprn API
+## Open API
 
 ```
-http://localhost:3000
+http://localhost:3000/openapi
 ```
 
 ## Test
