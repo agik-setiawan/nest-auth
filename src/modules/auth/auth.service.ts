@@ -36,6 +36,7 @@ export class AuthService {
 
   async login(login: LoginDto) {
     const user = await this.db.user.findFirst({ where: { email: login.email } });
+    console.log(user);
     if (!user) {
       throw new HttpException('User not found', HttpStatus.NOT_FOUND);
     }
