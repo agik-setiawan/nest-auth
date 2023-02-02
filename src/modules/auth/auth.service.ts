@@ -14,7 +14,8 @@ export class AuthService {
   /**
    * Register User
    */
-  async register(register: RegisterDto | any) {
+  async register(register: RegisterDto) {
+    console.log(register);
     try {
       if (await this.db.user.findFirst({ where: { email: register.email } })) {
         return {

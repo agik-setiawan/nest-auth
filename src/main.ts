@@ -1,10 +1,14 @@
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { cors } from 'config/cors';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+
+  app.enableCors(cors);
+  
   const config = new DocumentBuilder()
   .setTitle('User API Document')
   .setDescription('user API Document')
@@ -19,6 +23,6 @@ async function bootstrap() {
 const document = SwaggerModule.createDocument(app, config);
 SwaggerModule.setup('openapi', app, document);
 
-  await app.listen(3000);
+  await app.listen(3001);
 }
 bootstrap();

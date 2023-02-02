@@ -54,7 +54,7 @@ $ npm run start:prod
 ## Open API
 
 ```
-http://localhost:3000/openapi
+http://localhost:3001/openapi
 ```
 
 ## Test
